@@ -65,14 +65,14 @@ body, html {
 }
 
 .flagged {
-  background-image: url("/images/minesweeper-flag.png") !important;
+  background-image: url("../images/minesweeper-flag.png") !important;
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .mine {
-  background-image: url("/images/minesweeper-mine.png");
+  background-image: url("../images/minesweeper-mine.png");
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,13 +101,13 @@ body, html {
 }
 
 .smile {
-  background-image: url("/images/minesweeper-smile.png");
+  background-image: url("../images/minesweeper-smile.png");
 }
 
 .game-over {
-  background-image: url("/images/minesweeper-restart.png");
+  background-image: url("../images/minesweeper-restart.png");
 }
 
 .win {
-  background-image: url("/images/minesweeper-win.png");
+  background-image: url("../images/minesweeper-win.png");
 }
