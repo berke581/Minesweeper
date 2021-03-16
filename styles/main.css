@@ -1,0 +1,113 @@
+* {
+  font-family: "Squada One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background: #EFEFEF;
+}
+
+.minesweeper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.game-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  margin: 2px;
+  height: 40px;
+  border: 2px solid darkgray;
+}
+
+.game-table {
+  margin: 0 auto;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: gray;
+  padding: 1px;
+  border: 2px solid black;
+  border-top-color: rgb(214, 214, 214);
+  border-left-color: rgb(214, 214, 214);
+  border-bottom-color: rgb(90, 90, 90);
+  border-right-color: rgb(90, 90, 90);
+  cursor: default;
+}
+
+.table-item {
+  line-height: normal;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: silver;
+  border: 3px solid black;
+  border-top-color: rgb(214, 214, 214);
+  border-left-color: rgb(214, 214, 214);
+  border-bottom-color: rgb(90, 90, 90);
+  border-right-color: rgb(90, 90, 90);
+  box-sizing: border-box;
+}
+
+.active {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: silver;
+  border: none;
+}
+
+.flagged {
+  background-image: url("/images/minesweeper-flag.png") !important;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mine {
+  background-image: url("/images/minesweeper-mine.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.restart {
+  outline: 0;
+  width: 28px;
+  height: 28px;
+  background-color: silver;
+  border: 3px solid black;
+  border-top-color: rgb(214, 214, 214);
+  border-left-color: rgb(214, 214, 214);
+  border-bottom-color: rgb(90, 90, 90);
+  border-right-color: rgb(90, 90, 90);
+  box-sizing: border-box;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.restart:active {
+  background-color: silver;
+  background-size: 60%;
+  border: 0;
+}
+
+.smile {
+  background-image: url("/images/minesweeper-smile.png");
+}
+
+.game-over {
+  background-image: url("/images/minesweeper-restart.png");
+}
+
+.win {
+  background-image: url("/images/minesweeper-win.png");
+}
